@@ -9,11 +9,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    @IBOutlet private weak var label: UILabel!
+
+    @IBAction func cancel(segue: UIStoryboardSegue) {
     }
 
+    @IBAction func enter(segue: UIStoryboardSegue) {
 
+        let next = segue.source as! NextViewController
+
+        self.label.text = next.preferencesText
+    }
 }
 
