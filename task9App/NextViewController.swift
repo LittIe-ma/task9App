@@ -9,18 +9,18 @@ import UIKit
 
 class NextViewController: UIViewController {
 
-    var preferencesText = ""
+    var prefecturesText = ""
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
         if segue.identifier == "tokyo" {
-            preferencesText = "東京都"
+            prefecturesText = "東京都"
         }else if segue.identifier == "kanagawa" {
-            preferencesText = "神奈川県"
+            prefecturesText = "神奈川県"
         }else if segue.identifier == "saitama" {
-            preferencesText = "埼玉県"
+            prefecturesText = "埼玉県"
         }else if segue.identifier == "chiba" {
-            preferencesText = "千葉県"
+            prefecturesText = "千葉県"
         }
     }
 }
