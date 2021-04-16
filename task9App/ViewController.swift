@@ -18,7 +18,7 @@ class ViewController: UIViewController {
 
         let next = segue.source as! NextViewController
 
-        self.label.text = next.prefecturesText
+        self.label.text = next.prefectureText
     }
 }
 
